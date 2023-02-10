@@ -2,12 +2,12 @@
 ## Git hub user name
 
 
- [asd](https://github.com/asd)
+ [asdasd](https://github.com/asdasd)
 
 ## E-mail address
 
 
- eqdwe
+ asdasd
 
 ## Project name
 
@@ -17,19 +17,17 @@
 ## Description
 
 
- sadsad
+ asdsad
 
 ## License
 
 
- MIT ,APACHE 2.0 ,GPL 3.0 ,Eclipse Public License 1.0 
-
- ![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)
+ MIT,GPL 3.0
 
 ## dependencies
 
 
- a
+ npm i
 
 ## tests
 
@@ -39,10 +37,10 @@
 ## Usage
 
 
- a
+ asd
 
 ## Contributing
 
 
- asd
+ asdsad
 
