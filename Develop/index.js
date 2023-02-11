@@ -43,9 +43,10 @@ inquirer
         },
         {
             type: 'checkbox',
-            message: question5,
             name: 'userlicense',
-            choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'Eclipse Public License 1.0','GNU GPL v3','None'],
+            message: question5,
+            choices: ['MIT','APACHE','EPL','GNU','None'],
+            
         },
         {
             type: 'input',
@@ -78,6 +79,7 @@ inquirer
     )
     .then(function (data) {
         writeToFile(data);
+
     })
 
 
@@ -90,7 +92,9 @@ async function writeToFile(data) {
     }
 }
 // TODO: Create a function to initialize app
-function init() { }
+function init() { 
+   
+}
 
 // Function call to initialize app
 init();
