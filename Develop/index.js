@@ -45,7 +45,7 @@ inquirer
             type: 'checkbox',
             name: 'userlicense',
             message: question5,
-            choices: ['MIT','APACHE','EPL','GNU','None'],
+            choices: [' MIT ',' APACHE ',' EPL ',' GNU ',' None '],
             
         },
         {
