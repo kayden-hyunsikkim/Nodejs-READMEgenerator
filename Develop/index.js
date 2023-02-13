@@ -1,4 +1,5 @@
 // TODO: Include packages needed for this application
+const fs = require('fs');
 const inquirer = require('inquirer');
 const Markdown = require('./utils/generateMarkdown.js');
 
@@ -16,6 +17,9 @@ const questions = ["What is your GitHub username?",
 
 
 const [question1, question2, question3, question4, question5, question6, question7, question8, question9] = questions;
+
+// Function call to initialize app
+init();
 
 
 inquirer
@@ -93,8 +97,13 @@ async function writeToFile(data) {
 }
 // TODO: Create a function to initialize app
 function init() { 
-   
+    let existedFile = fs.existsSync('README.md')
+    if(existedFile){
+        fs.unlinkSync('README.md')
+        console.log("Successfully deleted already existed the file.")
+
+    } else {
+        return
+    }
 }
 
-// Function call to initialize app
-init();

@@ -25,7 +25,7 @@ function renderLicenseBadge(userlicense) {
   }
 
   if (userlicense.includes(' None ')) {
-    licenseBadge.push(`None`)
+    licenseBadge.push(` `)
   }
   console.log(licenseBadge);
   return licenseBadge;
@@ -55,7 +55,7 @@ function renderLicenseLink(userlicense) {
   }
 
   if (userlicense.includes(' None ')) {
-    licenseLink.push(`None`)
+    licenseLink.push(` `)
   }
   console.log(licenseLink);
   return licenseLink; 
@@ -73,7 +73,7 @@ function generateMarkdown(data) {
   const { username, email, projectname, description, userlicense, dependencies, tests, know, contributing } = data;
   renderLicenseBadge(userlicense);
   renderLicenseLink(userlicense);
-  const filename = 'READme.md'
+  const filename = 'README.md'
   fs.writeFileSync(filename, `# ${projectname}.README file  ${licenseBadge}\n`);
   fs.appendFileSync(filename, `## Table of contents\n\n * [Description](#description)\n\n * [Installation](#installation)\n\n * [Tests](#tests)\n\n * [Usage](#usage)\n\n * [License](#license)\n\n * [Contributing](#contributing)\n\n * [Questions](#questions)\n\n`);
   fs.appendFileSync(filename, `## Project name\n ${projectname}\n`);
@@ -84,8 +84,6 @@ function generateMarkdown(data) {
   renderLicenseSection(userlicense,licenseBadge,licenseLink);
   fs.appendFileSync(filename, `## Contributing\n ${contributing}\n`);
   fs.appendFileSync(filename, `## Questions\n * GitHub : [${username}](https://github.com/${username})\n * E-mail :  ${email}\n\n * How to reach me : (${contributing}  for further questions)`);
-  //console.log(data.title);
-  //return `# ${data.title}`;
 }
 
 module.exports = {
