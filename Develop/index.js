@@ -18,11 +18,20 @@ const questions = ["What is your GitHub username?",
 
 const [question1, question2, question3, question4, question5, question6, question7, question8, question9] = questions;
 
-// Function call to initialize app
-init();
 
 
-inquirer
+// TODO: Create a function to write README file
+async function writeToFile(data) {
+    try {
+        Markdown.generateMarkdown(data);
+    } catch (err) {
+        console.log('Error appending data to file', err);
+    }
+}
+
+// TODO: Create a function to initialize app
+function init() { 
+    inquirer
     .prompt([
         {
             type: 'input',
@@ -87,23 +96,7 @@ inquirer
     })
 
 
-// TODO: Create a function to write README file
-async function writeToFile(data) {
-    try {
-        Markdown.generateMarkdown(data);
-    } catch (err) {
-        console.log('Error appending data to file', err);
-    }
-}
-// TODO: Create a function to initialize app
-function init() { 
-    let existedFile = fs.existsSync('README.md')
-    if(existedFile){
-        fs.unlinkSync('README.md')
-        console.log("Successfully deleted already existed the file.")
-
-    } else {
-        return
-    }
 }
 
+// Function call to initialize app
+init();
