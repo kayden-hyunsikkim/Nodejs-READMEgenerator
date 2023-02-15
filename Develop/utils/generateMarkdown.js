@@ -74,9 +74,8 @@ function generateMarkdown(data) {
   renderLicenseBadge(userlicense);
   renderLicenseLink(userlicense);
   const filename = 'README.md'
-  fs.writeFileSync(filename, `# ${projectname}.README file  ${licenseBadge}\n`);
+  fs.writeFileSync(filename, `# ${projectname}  ${licenseBadge}\n`);
   fs.appendFileSync(filename, `## Table of contents\n\n * [Description](#description)\n\n * [Installation](#installation)\n\n * [Tests](#tests)\n\n * [Usage](#usage)\n\n * [License](#license)\n\n * [Contributing](#contributing)\n\n * [Questions](#questions)\n\n`);
-  fs.appendFileSync(filename, `## Project name\n ${projectname}\n`);
   fs.appendFileSync(filename, `## Description\n ${description}\n`);
   fs.appendFileSync(filename, `## Installation\n ${dependencies}\n`);
   fs.appendFileSync(filename, `## Tests\n ${tests}\n\n`);

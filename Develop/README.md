@@ -1,4 +1,4 @@
-# Flightdex.README file   ![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)  , ![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)  
+# README generator.README file   ![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)  
 ## Table of contents
 
  * [Description](#description)
@@ -15,26 +15,24 @@
 
  * [Questions](#questions)
 
-## Project name
- Flightdex
 ## Description
- searching flight tickets application
+ gernerating professional README file application
 ## Installation
  npm i
 ## Tests
  npm test
 
 ## Usage
- use command node index.js
+ use "node index.js" command in command line to operate this application
 
 ## License
 
 
-  MIT , EPL 
+  MIT 
 
-  ![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)  , ![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)  
+  ![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)  
 
-   [MIT] (https://opensource.org/licenses/MPL-2.0)  , [EPL] (https://opensource.org/licenses/EPL-1.0)  
+   [MIT] (https://opensource.org/licenses/MPL-2.0)  
 
  ## Contributing
  email me
