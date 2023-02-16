@@ -1,4 +1,4 @@
-# README generator.README file   ![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)  
+# README generator   ![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)  
 ## Table of contents
 
  * [Description](#description)
@@ -16,14 +16,14 @@
  * [Questions](#questions)
 
 ## Description
- gernerating professional README file application
+ generating professional readme file application
 ## Installation
  npm i
 ## Tests
  npm test
 
 ## Usage
- use "node index.js" command in command line to operate this application
+ use "node index.js" command to operate application
 
 ## License
 
